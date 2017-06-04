@@ -12,10 +12,10 @@ import javax.persistence.Table;
 public class FlowerDomain {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "Name", nullable = false)
+	@Column(name = "Name", nullable = false, unique=true)
 	private String name;
 	
 	@Column(name = "Price", nullable = false)

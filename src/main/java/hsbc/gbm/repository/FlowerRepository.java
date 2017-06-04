@@ -17,4 +17,9 @@ public class FlowerRepository extends AbstractRepository {
 		
 		return criteria.list();
 	}
+	
+	public void creatFlower(FlowerDomain flower) {
+		Session session = this.getSession();
+		session.save(flower);
+	}
 }

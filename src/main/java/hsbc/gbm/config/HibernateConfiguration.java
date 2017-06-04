@@ -45,7 +45,6 @@ public class HibernateConfiguration {
         properties.put("hibernate.dialect", dialect);
         properties.put("hibernate.show_sql", showSQL);
         properties.put("hibernate.format_sql", formatSQL);
-        properties.put("hibernate.current_session_context_class", thread);
 
         return properties;        
     }
