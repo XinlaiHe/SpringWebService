@@ -1,0 +1,112 @@
+2017-06-12 20:17:53,289 [main] INFO  hsbc.gbm.core.Application - Starting Application on hes-MacBook-Air.local with PID 20254 (/Users/hexinlai/Documents/SummerProject/SpringWebService/target/classes started by hexinlai in /Users/hexinlai/Documents/SummerProject/SpringWebService)
+2017-06-12 20:17:53,294 [main] INFO  hsbc.gbm.core.Application - No active profile set, falling back to default profiles: default
+2017-06-12 20:17:53,390 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ddced80: startup date [Mon Jun 12 20:17:53 CST 2017]; root of context hierarchy
+2017-06-12 20:17:54,299 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-06-12 20:17:56,169 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-06-12 20:17:56,194 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-06-12 20:17:56,196 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-06-12 20:17:56,400 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-06-12 20:17:56,400 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3011 ms
+2017-06-12 20:17:56,628 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-12 20:17:56,635 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-12 20:17:56,636 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-12 20:17:56,636 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-12 20:17:56,636 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-12 20:17:56,750 [main] INFO  hsbc.gbm.config.DataSourceConfiguration - Start To Set Datasource
+2017-06-12 20:17:56,765 [main] INFO  org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-06-12 20:17:56,765 [main] INFO  hsbc.gbm.config.DataSourceConfiguration - Set Datasource Successfully
+2017-06-12 20:17:57,049 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-06-12 20:17:57,059 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.1.Final}
+2017-06-12 20:17:57,062 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-06-12 20:17:57,065 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-06-12 20:17:57,601 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-06-12 20:17:57,783 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-06-12 20:17:57,790 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-06-12 20:17:58,772 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ddced80: startup date [Mon Jun 12 20:17:53 CST 2017]; root of context hierarchy
+2017-06-12 20:17:58,897 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/flowers],methods=[GET]}" onto public java.util.List<hsbc.gbm.domain.FlowerDomain> hsbc.gbm.controller.FlowerController.getFlowers()
+2017-06-12 20:17:58,899 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/flowers],methods=[POST]}" onto public void hsbc.gbm.controller.FlowerController.addFlower(hsbc.gbm.domain.FlowerDomain)
+2017-06-12 20:17:58,904 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-12 20:17:58,904 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-12 20:17:58,966 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 20:17:58,967 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 20:17:59,043 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 20:17:59,465 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-06-12 20:17:59,501 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-06-12 20:17:59,527 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-06-12 20:17:59,550 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-06-12 20:17:59,574 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-06-12 20:17:59,580 [main] INFO  hsbc.gbm.core.Application - Started Application in 6.779 seconds (JVM running for 7.907)
+2017-06-12 20:18:55,564 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-06-12 20:18:55,564 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-12 20:18:55,594 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2017-06-12 20:18:55,649 [http-nio-8080-exec-2] INFO  hsbc.gbm.controller.FlowerController - Add New Flower 0 null null
+2017-06-12 20:18:55,825 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+2017-06-12 20:18:55,825 [http-nio-8080-exec-2] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Column 'Name' cannot be null
+2017-06-12 20:18:55,828 [http-nio-8080-exec-2] ERROR hsbc.gbm.repository.FlowerRepository - Error Occur During Inserting New Flower, Begin to Rollback.
+2017-06-12 20:19:23,797 [http-nio-8080-exec-3] INFO  hsbc.gbm.controller.FlowerController - Add New Flower 0 null null
+2017-06-12 20:19:23,804 [http-nio-8080-exec-3] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+2017-06-12 20:19:23,804 [http-nio-8080-exec-3] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Column 'Name' cannot be null
+2017-06-12 20:19:23,804 [http-nio-8080-exec-3] ERROR hsbc.gbm.repository.FlowerRepository - Error Occur During Inserting New Flower, Begin to Rollback.
+2017-06-12 20:20:06,685 [http-nio-8080-exec-4] INFO  hsbc.gbm.controller.FlowerController - Add New Flower 0 null null
+2017-06-12 20:20:06,693 [http-nio-8080-exec-4] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+2017-06-12 20:20:06,693 [http-nio-8080-exec-4] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Column 'Name' cannot be null
+2017-06-12 20:20:06,693 [http-nio-8080-exec-4] ERROR hsbc.gbm.repository.FlowerRepository - Error Occur During Inserting New Flower, Begin to Rollback.
+2017-06-12 20:20:19,658 [http-nio-8080-exec-5] INFO  hsbc.gbm.controller.FlowerController - Add New Flower 0 null null
+2017-06-12 20:20:19,665 [http-nio-8080-exec-5] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+2017-06-12 20:20:19,665 [http-nio-8080-exec-5] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Column 'Name' cannot be null
+2017-06-12 20:20:19,666 [http-nio-8080-exec-5] ERROR hsbc.gbm.repository.FlowerRepository - Error Occur During Inserting New Flower, Begin to Rollback.
+2017-06-12 20:21:28,483 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ddced80: startup date [Mon Jun 12 20:17:53 CST 2017]; root of context hierarchy
+2017-06-12 20:21:28,486 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-06-12 20:21:34,398 [main] INFO  hsbc.gbm.core.Application - Starting Application on hes-MacBook-Air.local with PID 20264 (/Users/hexinlai/Documents/SummerProject/SpringWebService/target/classes started by hexinlai in /Users/hexinlai/Documents/SummerProject/SpringWebService)
+2017-06-12 20:21:34,403 [main] INFO  hsbc.gbm.core.Application - No active profile set, falling back to default profiles: default
+2017-06-12 20:21:34,493 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ddced80: startup date [Mon Jun 12 20:21:34 CST 2017]; root of context hierarchy
+2017-06-12 20:21:35,044 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-06-12 20:21:36,802 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-06-12 20:21:36,824 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-06-12 20:21:36,825 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-06-12 20:21:37,008 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-06-12 20:21:37,008 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2516 ms
+2017-06-12 20:21:37,253 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-12 20:21:37,259 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-12 20:21:37,260 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-12 20:21:37,260 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-12 20:21:37,260 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-12 20:21:37,358 [main] INFO  hsbc.gbm.config.DataSourceConfiguration - Start To Set Datasource
+2017-06-12 20:21:37,371 [main] INFO  org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-06-12 20:21:37,372 [main] INFO  hsbc.gbm.config.DataSourceConfiguration - Set Datasource Successfully
+2017-06-12 20:21:37,654 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-06-12 20:21:37,662 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.1.Final}
+2017-06-12 20:21:37,664 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-06-12 20:21:37,667 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-06-12 20:21:38,174 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-06-12 20:21:38,304 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-06-12 20:21:38,313 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-06-12 20:21:39,162 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ddced80: startup date [Mon Jun 12 20:21:34 CST 2017]; root of context hierarchy
+2017-06-12 20:21:39,276 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/flowers],methods=[GET]}" onto public java.util.List<hsbc.gbm.domain.FlowerDomain> hsbc.gbm.controller.FlowerController.getFlowers()
+2017-06-12 20:21:39,279 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/flowers],methods=[POST]}" onto public void hsbc.gbm.controller.FlowerController.addFlower(hsbc.gbm.domain.FlowerDomain)
+2017-06-12 20:21:39,285 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-12 20:21:39,286 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-12 20:21:39,336 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 20:21:39,336 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 20:21:39,402 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-12 20:21:39,807 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-06-12 20:21:39,838 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-06-12 20:21:39,875 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-06-12 20:21:39,892 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-06-12 20:21:39,917 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-06-12 20:21:39,926 [main] INFO  hsbc.gbm.core.Application - Started Application in 5.948 seconds (JVM running for 6.808)
+2017-06-12 20:21:42,976 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-06-12 20:21:42,977 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-12 20:21:43,007 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2017-06-12 20:21:43,071 [http-nio-8080-exec-2] INFO  hsbc.gbm.controller.FlowerController - Add New Flower 0 null null
+2017-06-12 20:21:43,237 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+2017-06-12 20:21:43,237 [http-nio-8080-exec-2] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Column 'Name' cannot be null
+2017-06-12 20:21:43,239 [http-nio-8080-exec-2] ERROR hsbc.gbm.repository.FlowerRepository - Error Occur During Inserting New Flower, Begin to Rollback.
+2017-06-12 20:22:42,869 [http-nio-8080-exec-3] INFO  hsbc.gbm.controller.FlowerController - Add New Flower 0 asd $12
+2017-06-12 20:22:42,899 [http-nio-8080-exec-3] INFO  hsbc.gbm.repository.FlowerRepository - Inserting New Flower Successfully.
+2017-06-12 20:23:16,990 [http-nio-8080-exec-4] INFO  hsbc.gbm.controller.FlowerController - Add New Flower 0 asd $12
+2017-06-12 20:23:16,998 [http-nio-8080-exec-4] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2017-06-12 20:23:16,999 [http-nio-8080-exec-4] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Duplicate entry 'asd' for key 'Name'
+2017-06-12 20:23:16,999 [http-nio-8080-exec-4] ERROR hsbc.gbm.repository.FlowerRepository - Error Occur During Inserting New Flower, Begin to Rollback.
+2017-06-12 20:23:53,112 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ddced80: startup date [Mon Jun 12 20:21:34 CST 2017]; root of context hierarchy
+2017-06-12 20:23:53,114 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
