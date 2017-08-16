@@ -19,6 +19,8 @@ public class FlowerRepository extends AbstractRepository {
 	public List<FlowerDomain> getList() {
 		Session session = this.getSession();
 		Criteria criteria = session.createCriteria(FlowerDomain.class);
+		logInfo.info("Getting Flower List.");
+		session.close();
 		
 		return criteria.list();
 	}
@@ -33,6 +35,8 @@ public class FlowerRepository extends AbstractRepository {
 		} catch(Exception e) {
 			logInfo.error("Error Occur During Inserting New Flower, Begin to Rollback.");
 			transaction.rollback();
+		} finally {
+			session.close();
 		}
 		
 	}
