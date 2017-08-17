@@ -2,12 +2,10 @@ package hsbc.gbm.config;
 
 import java.util.Properties;
 import javax.sql.DataSource;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 
 @Configuration
@@ -48,12 +46,4 @@ public class HibernateConfiguration {
 
         return properties;        
     }
-	
-//	@Bean
-//    @Autowired
-//    public HibernateTransactionManager transactionManager(SessionFactory sessionFactory) {
-//       HibernateTransactionManager txManager = new HibernateTransactionManager();
-//       txManager.setSessionFactory(sessionFactory);
-//       return txManager;
-//    }
 }
